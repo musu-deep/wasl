@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#07131f" />
+  <title>وَصْل | الاتصالات المؤسسية السيادية</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section id="loginScreen" class="login-screen">
+    <div class="space-haze"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <header class="login-nav"><a class="login-logo" href="#"><span>و</span><div><strong>وَصْل</strong><small>اتصالات مؤسسية سيادية</small></div></a><nav><a href="#">الإمكانات</a><a href="#">السيادة الرقمية</a><a href="#">الأمان</a></nav><div class="system-live"><i></i><span>الأنظمة تعمل داخلياً</span></div></header>
+    <div class="login-content">
+      <div class="hero-copy"><span class="hero-kicker"><i></i> بنية اتصالاتك… تحت سيطرتك</span><h1>كل مسافات العالم<br><em>داخل مؤسستك.</em></h1><p>دردشة، مكالمات واجتماعات وملفات في فضاء رقمي واحد؛ مستضاف بالكامل على خوادمك، ومحكوم بسياساتك، ويحمل هويتك وحدك.</p><div class="trust-row"><span><b>100%</b> استضافة خاصة</span><span><b>0</b> بيانات خارجية</span><span><b>24/7</b> اتصال سيادي</span></div></div>
+      <form id="loginForm" class="login-card"><div class="card-glow"></div><div class="login-card-head"><span class="secure-icon">◇</span><div><span>بوابة الدخول الآمن</span><small>Protected Access Gateway</small></div><i></i></div><h2>مرحباً بعودتك</h2><p>ادخل إلى مساحة العمل المؤسسية</p><label><span>البريد المؤسسي</span><div class="field"><b>＠</b><input id="email" type="email" value="loai@fasdev.org" required></div></label><label><span>كلمة المرور</span><div class="field"><b>⌁</b><input id="password" type="password" value="wasl2026" required><button id="togglePassword" type="button">◉</button></div></label><div class="login-options"><label><input type="checkbox" checked> تذكر هذا الجهاز</label><a href="#">استعادة الوصول</a></div><button class="login-submit" type="submit"><span>الدخول إلى وَصْل</span><b>←</b></button><div class="divider"><span>أو عبر هوية المؤسسة</span></div><button type="button" class="sso-btn"><span class="sso-mark">S</span> الدخول الموحد SSO</button><footer><i></i> تشفير شامل من نقطة إلى نقطة <span>•</span> بياناتك لا تغادر مؤسستك</footer></form>
+    </div>
+    <div class="floating-glass float-a"><span>◉</span><div><b>اتصال عالمي</b><small>بسيادة محلية كاملة</small></div></div><div class="floating-glass float-b"><span>⌾</span><div><b>1,000+</b><small>قدرة مؤسسية</small></div></div><div class="login-footer"><span>وَصْل © 2026</span><span>الخصوصية · الامتثال · مركز الثقة</span></div>
+  </section>
+  <div id="appShell" class="app-shell locked">
+    <aside class="rail" aria-label="التنقل الرئيسي">
+      <button class="brand" title="وَصْل"><span>و</span></button>
+      <nav>
+        <button class="rail-btn active" data-view="chat" title="المحادثات">◫<small>الدردشة</small></button>
+        <button class="rail-btn" data-view="meet" title="الاجتماعات">◉<small>اجتماعات</small></button>
+        <button class="rail-btn" data-view="calls" title="المكالمات">⌕<small>مكالمات</small></button>
+        <button class="rail-btn" data-view="files" title="الملفات">▱<small>الملفات</small></button>
+      </nav>
+      <button class="avatar" id="logoutButton" title="تسجيل الخروج">ل</button>
+    </aside>
+
+    <aside class="sidebar">
+      <header class="workspace-head">
+        <div><span class="eyebrow">مساحة العمل</span><strong>مجموعة فاس</strong></div>
+        <button class="icon-btn">⌄</button>
+      </header>
+      <label class="search"><span>⌕</span><input id="search" placeholder="ابحث في كل شيء" /><kbd>⌘ K</kbd></label>
+      <section class="quick-actions">
+        <button id="newMessage">＋ رسالة جديدة</button>
+        <button id="startMeeting">بدء اجتماع</button>
+      </section>
+      <div class="section-title"><span>القنوات</span><button>＋</button></div>
+      <div id="channelList" class="channel-list"></div>
+      <div class="section-title"><span>الرسائل المباشرة</span><button>＋</button></div>
+      <div id="peopleList" class="people-list"></div>
+      <div class="security-card"><i></i><div><strong>اتصال سيادي مشفّر</strong><span>جميع الخدمات تعمل داخل خوادم المؤسسة</span></div></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="channel-meta"><button class="mobile-menu">☰</button><div class="channel-icon">#</div><div><h1 id="channelName">التحول الرقمي</h1><p id="channelDesc">تنسيق البرامج والمشروعات الرقمية</p></div></div>
+        <div class="top-actions"><span class="members">● ● ● <b>24</b></span><button class="icon-btn" title="مكالمة صوتية">☎</button><button class="video-btn" id="videoCall">▣ <span>اجتماع مرئي</span></button><button class="icon-btn">⋮</button></div>
+      </header>
+
+      <section id="chatView" class="view active">
+        <div class="pin"><span>◆</span><p><strong>مشروع مثبت:</strong> منصة التشغيل المؤسسي — النسخة التجريبية جاهزة للمراجعة</p><button>عرض المشروع</button></div>
+        <div id="messages" class="messages"></div>
+        <div class="typing"><i></i><i></i><i></i><span>سارة تكتب الآن…</span></div>
+        <form id="composer" class="composer">
+          <textarea id="messageInput" rows="1" placeholder="اكتب رسالة إلى #التحول-الرقمي"></textarea>
+          <div class="compose-tools"><div><button type="button">＋</button><button type="button">⌕</button><button type="button">☺</button><button type="button">＠</button></div><button class="send" aria-label="إرسال">➤</button></div>
+        </form>
+      </section>
+
+      <section id="meetView" class="view dashboard-view">
+        <div class="hero-card"><div><span class="eyebrow">اجتماعات آمنة من خوادمك</span><h2>اجتماعات بلا حدود خارجية</h2><p>فيديو عالي الدقة، مشاركة شاشة، غرف فرعية، تسجيل داخلي وتشفير متقدم.</p><button class="primary" id="heroMeeting">بدء اجتماع فوري</button><button class="ghost">جدولة اجتماع</button></div><div class="video-preview"><div class="preview-person">ل</div><span class="live">● مباشر</span><div class="preview-bar">◉ &nbsp; ◉ &nbsp; ◉</div></div></div>
+        <div class="stats"><article><b>12</b><span>اجتماعاً اليوم</span></article><article><b>98.9%</b><span>جودة الاتصال</span></article><article><b>146</b><span>مشاركاً نشطاً</span></article><article><b>0</b><span>بيانات خارج المؤسسة</span></article></div>
+      </section>
+
+      <section id="callsView" class="view dashboard-view"><div class="empty-state"><div>☎</div><h2>مركز المكالمات المؤسسية</h2><p>مكالمات صوتية ومرئية، تحويل، انتظار، تسجيل وتقارير جودة — داخل بنيتك الخاصة.</p><button class="primary">بدء مكالمة</button></div></section>
+      <section id="filesView" class="view dashboard-view"><div class="files-head"><div><h2>ملفات المؤسسة</h2><p>مستودع مشفّر مع صلاحيات وإصدارات وسجل تدقيق.</p></div><button class="primary">رفع ملف</button></div><div id="fileGrid" class="file-grid"></div></section>
+    </main>
+
+    <aside class="details">
+      <header><h3>تفاصيل القناة</h3><button class="icon-btn">×</button></header>
+      <div class="detail-hero"><div>#</div><h3>التحول الرقمي</h3><p>قناة خاصة · 24 عضواً</p></div>
+      <div class="detail-actions"><button>🔔<span>الإشعارات</span></button><button>⌕<span>البحث</span></button><button>＋<span>إضافة</span></button></div>
+      <details open><summary>الأعضاء <b>24</b></summary><div class="member-row"><span class="avatar green">س</span><div><strong>سارة أحمد</strong><small>مديرة المشروع</small></div><i class="online"></i></div><div class="member-row"><span class="avatar blue">م</span><div><strong>محمد علي</strong><small>قائد التقنية</small></div><i class="online"></i></div><button class="text-btn">عرض جميع الأعضاء</button></details>
+      <details open><summary>الوسائط والملفات <b>18</b></summary><div class="mini-files"><span>PDF</span><span>DOC</span><span>PNG</span></div><button class="text-btn">عرض جميع الملفات</button></details>
+      <details><summary>الروابط المحفوظة <b>7</b></summary></details>
+      <div class="compliance"><span>✓</span><div><strong>متوافق ومُدار محلياً</strong><small>ISO 27001 · سياسات احتفاظ مخصصة</small></div></div>
+    </aside>
+  </div>
+  <div id="meetingModal" class="modal" aria-hidden="true"><div class="modal-card"><button class="close" id="closeModal">×</button><span class="eyebrow">غرفة اجتماع خاصة</span><h2>جاهز للانضمام؟</h2><div class="camera"><div class="avatar big">ل</div><span>معاينة الكاميرا</span></div><div class="meeting-controls"><button>🎙 الميكروفون</button><button>▣ الكاميرا</button></div><button class="primary wide">انضم الآن</button><small>يتم إنشاء الاتصال عبر خوادم WebRTC الداخلية</small></div></div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
